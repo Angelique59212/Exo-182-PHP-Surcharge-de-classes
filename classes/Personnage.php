@@ -9,6 +9,22 @@ class Personnage {
     // + protected $id;
     protected $id;
     protected $nom;
+
+    /**
+     * @return int
+     */
+    public function getVie()
+    {
+        return $this->vie;
+    }
+
+    /**
+     * @param int $vie
+     */
+    public function setVie($vie)
+    {
+        $this->vie = $vie;
+    }
     protected $vie;
 
     // Constructeur de ma classe permettant de définir des valeurs par défaut lorsqu'elle est instanciée
@@ -23,6 +39,38 @@ class Personnage {
     public function walkRight() {
         $this->x += 1;
 
+    }
+
+    /**
+     * @return int
+     */
+    public function getX()
+    {
+        return $this->x;
+    }
+
+    /**
+     * @param int $x
+     */
+    public function setX($x)
+    {
+        $this->x = $x;
+    }
+
+    /**
+     * @return int
+     */
+    public function getY()
+    {
+        return $this->y;
+    }
+
+    /**
+     * @param int $y
+     */
+    public function setY($y)
+    {
+        $this->y = $y;
     }
 
     // Setter permettant de définir l'attribut privé id
